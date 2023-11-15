@@ -1,3 +1,6 @@
+from PIL import Image
+import os, glob
+
 directory = '/Users/lidiyadzhumayeva/Desktop/goodstore_images'
 files = os.listdir(directory)
 index = 0
