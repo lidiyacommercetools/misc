@@ -9,6 +9,6 @@ while index < len(files):
     if filename.endswith('.jpeg'):
         with open(os.path.join(directory, filename)) as f:
             image = Image.open(filename)
-            new_image = image.resize((700, 700))
-            new_image.save("updated_images/" + str(filename)[:-5] + "-large.jpeg", "jpeg")
+            image.thumbnail((700,700))
+            image.save("updated_images/" + str(filename)[:-5] + "-large.jpeg", "jpeg")
     index += 1
